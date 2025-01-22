@@ -57,7 +57,7 @@ def setup_rag(description):
 # Function to generate a response using Gemini
 def hybrid_response(question, context):
     response = gemini_model.generate_content([
-        f"Context: {context}\n\nAnswer the following question in detail: {question}"
+        f"Context: {context}\n\nAnswer the following question in detail and clear and short: {question}"
     ])
     return response.text
 
